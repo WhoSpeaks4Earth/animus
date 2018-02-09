@@ -1,0 +1,17 @@
+
+<h2>Solar vs Oil</h2>
+<div class="row solar-v-gas">
+    <div class="col-6">
+        <p class="text-muted">Solar</p>
+        <div *ngFor="let item of solarItems" class="alert alert-{{item.type}}" role="alert">
+            <b>{{item.title}}</b> {{item.content}}
+        </div>
+        
+    </div>
+    <div class="col-6">
+        <p class="text-muted">Oil</p>
+        <div *ngFor="let item of oilItems" class="alert alert-{{item.type}}" role="alert">
+            <b>{{item.title}}</b> {{item.content}}
+        </div>
+    </div>
+</div>
